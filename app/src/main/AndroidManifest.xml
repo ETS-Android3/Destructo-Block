@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="itp341.luu.jonathan.finalprojectluujonathan" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <service android:name=".Controllers.BackgroundMusicPlayerService"
+            android:enabled="true"/>
+        <activity
+            android:name=".Controllers.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Controllers.SettingsActivity"
+            android:label="Settings"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Controllers.GameActivity"
+            android:label="Empty"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Controllers.NextLevelActivity"
+            android:label="Empty"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Controllers.ScoresActivity"
+            android:label="Scores"
+            android:screenOrientation="portrait">
+        </activity>
+
+    </application>
+</manifest>
